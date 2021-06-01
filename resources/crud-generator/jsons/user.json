@@ -1,0 +1,48 @@
+{
+    "fields": [
+        {
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "age",
+            "type": "integer"
+        },
+        {
+            "name": "gender",
+            "type": "string"
+        },
+        {
+            "name": "phone",
+            "type": "string"
+        },
+        {
+            "name": "photo",
+            "type": "file"
+        },
+        {
+            "name": "email",
+            "type": "string"
+        },
+        {
+            "name": "email_verified_at",
+            "type": "timestamp"
+        },
+        {
+            "name": "password",
+            "type": "string"
+        },
+        {
+            "name": "rememberToken",
+            "type": "string"
+        },
+        {
+            "name": "role",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        }
+    ]
+}

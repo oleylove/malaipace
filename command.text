@@ -1,0 +1,149 @@
+STATUS
+    USER
+        สมาชิกใหม่
+        สมาชิกจอง
+        สมาชิกเช่า
+        สมาชิกแจ้งย้าย
+        สมาชิกออกแล้ว
+        ผู้ดูแลหอพัก
+
+    ROOM
+        ว่าง
+        จอง
+        เช่า
+        แจ้งย้าย
+        ปรับปรุง
+
+    LEASE
+        จอง
+        ยืนยันจอง
+        ยกเลิกจอง
+        เช่าอยู่
+        แจ้งย้าย
+        ยืนยันแจ้งย้าย
+        ย้ายออก
+
+    INVOICE
+        รอชำระเงิน
+        รอตรวจสอบ
+        ชำระเงินแล้ว
+        ยกเลิกการชำระเงิน
+
+    MAINTENANCE
+        แจ้งซ่อม
+        กำลังซ่อม
+        ยกเลิกแจ้งซ่อม
+        ซ่อมเสร็จแล้ว
+
+
+
+
+1. composer create-project --prefer-dist laravel/laravel blog "6.*"
+2. composer require laravel/ui:^1.0 --dev
+3. npm install && npm run dev
+4. php artisan ui bootstrap --auth
+5. php artisan make:middleware CheckRole
+6. app/Http/Kernel.php =>
+    protected $routeMiddleware = [
+        .......
+        'role' => \App\Http\Middleware\CheckRole::class,
+    ]
+
+7. composer require laravelcollective/html
+8. composer require appzcoder/crud-generator --dev
+8. php artisan vendor:publish --provider="Appzcoder\CrudGenerator\CrudGeneratorServiceProvider"
+9. config/app.php =>
+    'providers' => [
+        ...
+        Collective\Html\HtmlServiceProvider::class,
+    ],
+    'aliases' => [
+        ...
+        'Form' => Collective\Html\FormFacade::class,
+        'HTML' => Collective\Html\HtmlFacade::class,
+    ],
+10. Config/crudgenerator.php =>
+    <?php
+        return [
+            ...
+            'view_columns_number' => 100,
+            ...
+        ]
+    ];
+
+11. composer require barryvdh/laravel-dompdf
+12. config/app.php =>
+    'providers' => [
+        ...
+        Barryvdh\DomPDF\ServiceProvider::class,
+    ],
+    'aliases' => [
+        ....
+        //Add this line of code
+        'PDF' => Barryvdh\DomPDF\Facade::class,
+    ],
+
+13. composer require jenssegers/date
+    config/app.php =>
+        'providers' => [
+            ...
+            Jenssegers\Date\DateServiceProvider::class,
+        ],
+        'aliases' => [
+            ....
+            'Date' => Jenssegers\Date\Date::class,
+        ],
+
+14. composer require doctrine/dbal
+15. php artisan make:seeder ConfigTableSeeder
+    => composer dump-autoload
+    => php artisan db:seed --class=RoomTableSeeder
+
+1... composer dumpautoload
+
+
+
+LoadProject
+composer install
+copy .env.example .env
+php artisan key:generate
+php artisan storage:link
+
+composer create-project laravel/laravel chatify-app
+composer create-project laravel/laravel chatify
+
+Crud Generator
+1. php artisan crud:generate MyWishlist --fields_from_file="resources/crud-generator/json/wishlist.json"
+
+
+php artisan make:migration create_likes_table --create=likes
+php artisan make:model Likes
+php artisan migrate
+
+php artisan make:controller PrintController --resource
+
+Change Password
+php artisan make:rule MatchOldPassword
+ => return Hash::check($value, auth()->user()->password);
+ php artisan make:controller ChangePasswordController --resource
+
+php artisan vendor:publish --tag=laravel-errors
+
+composer require intervention/image
+'providers' => [
+      Intervention\Image\ImageServiceProvider::class
+ ],
+
+ 'aliases' => [
+        'Image' => Intervention\Image\Facades\Image::class
+],
+
+php artisan make:controller GuestController --resource
+
+composer require silkyland/sawasdee
+'Sawasdee' => Silkyland\Sawasdee::class,
+
+composer require consoletvs/charts:6.*
+ConsoleTVs\Charts\ChartsServiceProvider::class,
+php artisan vendor:publish --tag=charts_config
+php artisan make:chart ReportChart

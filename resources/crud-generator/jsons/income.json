@@ -1,0 +1,15 @@
+{
+    "fields": [{
+            "name": "date",
+            "type": "date"
+        },
+        {
+            "name": "income",
+            "type": "integer"
+        },
+        {
+            "name": "remark",
+            "type": "string"
+        }
+    ]
+}

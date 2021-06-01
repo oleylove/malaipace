@@ -1,0 +1,19 @@
+{
+    "fields": [{
+            "name": "date",
+            "type": "timestamp"
+        },
+        {
+            "name": "detail",
+            "type": "text"
+        },
+        {
+            "name": "photo",
+            "type": "file"
+        },
+        {
+            "name": "file",
+            "type": "file"
+        }
+    ]
+}

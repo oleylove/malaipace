@@ -1,0 +1,51 @@
+{
+    "fields": [{
+            "name": "typ_id",
+            "type": "integer"
+        },
+        {
+            "name": "number",
+            "type": "string"
+        },
+        {
+            "name": "building",
+            "type": "string"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "meter_wo",
+            "type": "integer"
+        },
+        {
+            "name": "meter_wn",
+            "type": "integer"
+        },
+        {
+            "name": "meter_po",
+            "type": "integer"
+        },
+        {
+            "name": "meter_pn",
+            "type": "integer"
+        },
+        {
+            "name": "photo1",
+            "type": "file"
+        },
+        {
+            "name": "photo2",
+            "type": "file"
+        },
+        {
+            "name": "photo3",
+            "type": "file"
+        },
+        {
+            "name": "photo4",
+            "type": "file"
+        }
+    ]
+}

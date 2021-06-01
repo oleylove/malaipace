@@ -1,0 +1,72 @@
+{
+    "fields": [
+        {
+            "name": "title",
+            "type": "string"
+        },
+        {
+            "name": "website",
+            "type": "string"
+        },
+        {
+            "name": "address",
+            "type": "text"
+        },
+        {
+            "name": "bbl",
+            "type": "string"
+        },
+        {
+            "name": "bbl_logo",
+            "type": "file"
+        },
+        {
+            "name": "kbsnk",
+            "type": "string"
+        },
+        {
+            "name": "kbsnk_logo",
+            "type": "file"
+        },
+        {
+            "name": "scb",
+            "type": "string"
+        },
+        {
+            "name": "scb_logo",
+            "type": "file"
+        },
+        {
+            "name": "bay",
+            "type": "string"
+        },
+        {
+            "name": "bay_logo",
+            "type": "string"
+        },
+        {
+            "name": "logo",
+            "type": "file"
+        },
+        {
+            "name": "photo1",
+            "type": "file"
+        },
+        {
+            "name": "photo2",
+            "type": "file"
+        },
+        {
+            "name": "photo3",
+            "type": "file"
+        },
+        {
+            "name": "photo4",
+            "type": "file"
+        },
+        {
+            "name": "photo5",
+            "type": "file"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+
+php artisan crud:generate User --fields_from_file="resources/crud-generator/jsons/user.json"
+
+php artisan crud:generate Room --fields_from_file="resources/crud-generator/jsons/room.json"
+
+php artisan crud:generate Type --fields_from_file="resources/crud-generator/jsons/type.json"
+
+php artisan crud:generate Webconfig --fields_from_file="resources/crud-generator/jsons/webconfig.json"
+
+php artisan crud:generate Lease --fields_from_file="resources/crud-generator/jsons/lease.json"
+
+php artisan crud:generate Invoice --fields_from_file="resources/crud-generator/jsons/invoice.json"
+
+php artisan crud:generate Maintenance --fields_from_file="resources/crud-generator/jsons/maintenance.json"
+
+php artisan crud:generate Income --fields_from_file="resources/crud-generator/jsons/income.json"
+
+php artisan crud:generate Notice --fields_from_file="resources/crud-generator/jsons/notice.json"

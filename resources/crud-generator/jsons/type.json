@@ -1,0 +1,47 @@
+{
+    "fields": [{
+            "name": "name",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "integer"
+        },
+        {
+            "name": "water",
+            "type": "integer"
+        },
+        {
+            "name": "power",
+            "type": "integer"
+        },
+        {
+            "name": "centric",
+            "type": "integer"
+        },
+        {
+            "name": "wifi",
+            "type": "integer"
+        },
+        {
+            "name": "vehicle",
+            "type": "integer"
+        },
+        {
+            "name": "mulct",
+            "type": "integer"
+        },
+        {
+            "name": "booking",
+            "type": "integer"
+        },
+        {
+            "name": "doposit",
+            "type": "integer"
+        },
+        {
+            "name": "photo",
+            "type": "file"
+        }
+    ]
+}

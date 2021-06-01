@@ -1,0 +1,32 @@
+{
+    "fields": [
+        {
+            "name": "rm_id",
+            "type": "integer"
+        },
+        {
+            "name": "date",
+            "type": "date"
+        },
+        {
+            "name": "ready_date",
+            "type": "datetime"
+        },
+        {
+            "name": "detail",
+            "type": "text"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "price",
+            "type": "integer"
+        },
+        {
+            "name": "date_done",
+            "type": "timestamp"
+        }
+    ]
+}

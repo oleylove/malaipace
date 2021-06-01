@@ -1,0 +1,2 @@
+INSERT INTO `users` (`id`, `name`, `email`, `age`, `gender`, `phone`, `photo`, `role`, `status`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'admin', 'admin@gmail.com', 31, 'ชาย', '088-328-8235', 'users/X0S0F05LzJbQy6dcQSeU3LLxOJ5O64oICyUoTgCb.png', 'admin', 'admin', NULL, '$2y$10$hKt8EL6HWewzo.ztokLg1.Sl2ndW59czsbpTGWZgmRFybqjBtqBLW', NULL, NOW(), NOW());

@@ -1,0 +1,104 @@
+{
+    "fields": [
+        {
+            "name": "les_id",
+            "type": "integer"
+        },
+        {
+            "name": "inc_id",
+            "type": "integer"
+        },
+        {
+            "name": "date",
+            "type": "date"
+        },
+        {
+            "name": "date_pay",
+            "type": "timestamp"
+        },
+        {
+            "name": "pay_date",
+            "type": "date"
+        },
+        {
+            "name": "delay_date",
+            "type": "integer"
+        },
+        {
+            "name": "meter_wo",
+            "type": "integer"
+        },
+        {
+            "name": "meter_wn",
+            "type": "integer"
+        },
+        {
+            "name": "meter_wu",
+            "type": "integer"
+        },
+        {
+            "name": "meter_wpu",
+            "type": "integer"
+        },
+        {
+            "name": "meter_wtp",
+            "type": "integer"
+        },
+        {
+            "name": "meter_po",
+            "type": "integer"
+        },
+        {
+            "name": "meter_pn",
+            "type": "integer"
+        },
+        {
+            "name": "meter_pu",
+            "type": "integer"
+        },
+        {
+            "name": "meter_ppu",
+            "type": "integer"
+        },
+        {
+            "name": "meter_ptp",
+            "type": "integer"
+        },
+        {
+            "name": "typ_centric",
+            "type": "integer"
+        },
+        {
+            "name": "typ_wifi",
+            "type": "integer"
+        },
+        {
+            "name": "typ_vehicle",
+            "type": "integer"
+        },
+        {
+            "name": "typ_mulct",
+            "type": "integer"
+        },
+        {
+            "name": "les_price",
+            "type": "integer"
+        },
+        {
+            "name": "net_pay",
+            "type": "integer"
+        },
+        {
+            "name": "typ_doposit",
+            "type": "integer"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "slip",
+            "type": "file"
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "fields": [
+        {
+            "name": "rm_id",
+            "type": "integer"
+        },
+        {
+            "name": "user_id",
+            "type": "integer"
+        },
+        {
+            "name": "idcard",
+            "type": "string"
+        },
+        {
+            "name": "date_start",
+            "type": "date"
+        },
+        {
+            "name": "date_end",
+            "type": "date"
+        },
+        {
+            "name": "vehicle",
+            "type": "string"
+        },
+        {
+            "name": "vehicle_reg",
+            "type": "string"
+        },
+        {
+            "name": "number",
+            "type": "integer"
+        },
+        {
+            "name": "typ_wifi",
+            "type": "string"
+        },
+        {
+            "name": "typ_vehicle",
+            "type": "string"
+        },
+        {
+            "name": "typ_price",
+            "type": "integer"
+        },
+        {
+            "name": "typ_booking",
+            "type": "integer"
+        },
+        {
+            "name": "typ_doposit",
+            "type": "integer"
+        },
+        {
+            "name": "net_pay",
+            "type": "integer"
+        },
+        {
+            "name": "meter_ws",
+            "type": "integer"
+        },
+        {
+            "name": "meter_ps",
+            "type": "integer"
+        },
+        {
+            "name": "status",
+            "type": "string"
+        },
+        {
+            "name": "bkg_slip",
+            "type": "file"
+        },
+        {
+            "name": "idcard_doc",
+            "type": "file"
+        },
+        {
+            "name": "lease_doc",
+            "type": "file"
+        },
+        {
+            "name": "checkout",
+            "type": "timestamp"
+        }
+    ]
+}
