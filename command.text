@@ -97,8 +97,8 @@ STATUS
 14. composer require doctrine/dbal
 15. php artisan make:seeder ConfigTableSeeder
     => composer dump-autoload
-    => php artisan db:seed --class=RoomTableSeeder
-
+    => php artisan db:seed --class=TypesTableSeeder
+    => php artisan db:seed --class=RoomsTableSeeder
 1... composer dumpautoload
 
 
