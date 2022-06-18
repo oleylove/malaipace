@@ -18,8 +18,8 @@ class CreateNoticesTable extends Migration
             $table->increments('id');
             $table->timestamp('date')->nullable();
             $table->text('detail')->nullable();
-            $table->string('photo',50)->nullable();
-            $table->string('file',50)->nullable();
+            $table->string('photo',100)->nullable();
+            $table->string('file',100)->nullable();
             $table->timestamps();
         });
     }

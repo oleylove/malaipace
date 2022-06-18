@@ -25,10 +25,10 @@ class CreateRoomsTable extends Migration
             $table->integer('meter_wn')->default(0)->comment('มิเตอร์น้ำล่าสุด');
             $table->integer('meter_po')->default(0)->comment('มิเตอร์ไฟเก่า');
             $table->integer('meter_pn')->default(0)->comment('มิเตอร์ไฟล่าสุด');
-            $table->string('photo1',30)->nullable()->comment('รูปห้อง1');
-            $table->string('photo2',30)->nullable()->comment('รูปห้อง2');
-            $table->string('photo3',30)->nullable()->comment('รูปห้อง3');
-            $table->string('photo4',30)->nullable()->comment('รูปห้อง4');
+            $table->string('photo1',100)->nullable()->comment('รูปห้อง1');
+            $table->string('photo2',100)->nullable()->comment('รูปห้อง2');
+            $table->string('photo3',100)->nullable()->comment('รูปห้อง3');
+            $table->string('photo4',100)->nullable()->comment('รูปห้อง4');
             $table->timestamps();
         });
     }

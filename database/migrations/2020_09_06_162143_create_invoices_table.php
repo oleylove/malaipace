@@ -40,7 +40,7 @@ class CreateInvoicesTable extends Migration
             $table->integer('net_pay')->comment('จ่ายสุทธิ');
             $table->integer('typ_doposit')->default(0)->comment('คืนค่าประกัน');
             $table->string('status',20)->nullable()->comment('สถานะใบแจ้งหนี้');
-            $table->string('slip')->nullable()->comment('สถานะใบแจ้งหนี้');
+            $table->string('slip',100)->nullable()->comment('สถานะใบแจ้งหนี้');
             $table->timestamps();
         });
     }

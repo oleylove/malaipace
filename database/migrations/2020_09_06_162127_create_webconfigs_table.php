@@ -29,11 +29,11 @@ class CreateWebconfigsTable extends Migration
             $table->string('bay')->default('เลขบัญชี xxx-x-xxxxx-x ชื่่อบัญชี Apartment Management System');
             $table->string('bay_logo')->nullable();
             $table->string('logo')->nullable();
-            $table->string('photo1')->nullable();
-            $table->string('photo2')->nullable();
-            $table->string('photo3')->nullable();
-            $table->string('photo4')->nullable();
-            $table->string('photo5')->nullable();
+            $table->string('photo1',100)->nullable();
+            $table->string('photo2',100)->nullable();
+            $table->string('photo3',100)->nullable();
+            $table->string('photo4',100)->nullable();
+            $table->string('photo5',100)->nullable();
             $table->timestamps();
         });
     }

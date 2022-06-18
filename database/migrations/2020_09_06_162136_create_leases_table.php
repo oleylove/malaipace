@@ -35,9 +35,9 @@ class CreateLeasesTable extends Migration
             $table->integer('meter_ws')->nullable()->comment('มิเตอร์น้ำเริ่มต้น');
             $table->integer('meter_ps')->nullable()->comment('มิเตอร์ไฟเริ่มต้น');
             $table->string('status',20)->nullable()->comment('สถานะเช่า');
-            $table->string('bkg_slip',30)->nullable()->comment('สลิปค่าจอง');
-            $table->string('idcard_doc',30)->nullable()->comment('สำเนาบัตร');
-            $table->string('lease_doc',30)->nullable()->comment('สัญญา');
+            $table->string('bkg_slip',100)->nullable()->comment('สลิปค่าจอง');
+            $table->string('idcard_doc',100)->nullable()->comment('สำเนาบัตร');
+            $table->string('lease_doc',100)->nullable()->comment('สัญญา');
             $table->timestamp('checkout')->nullable()->comment('วันแจ้งย้าย');
             $table->timestamps();
         });

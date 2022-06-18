@@ -27,7 +27,7 @@ class CreateTypesTable extends Migration
             $table->integer('mulct')->default(0)->comment('ค่าล่าช้าต่อวัน');
             $table->integer('booking')->default(0)->comment('ค่าจอง');
             $table->integer('doposit')->default(0)->comment('ค่ามัดจำ');
-            $table->string('photo',30)->nullable()->comment('รูปภาพ');
+            $table->string('photo',100)->nullable()->comment('รูปภาพ');
             $table->timestamps();
         });
     }

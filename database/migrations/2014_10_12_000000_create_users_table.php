@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->integer('age')->nullable();
             $table->string('gender',5)->nullable();
             $table->string('phone',12)->nullable();
-            $table->string('photo',30)->nullable();
+            $table->string('photo',100)->nullable();
             $table->string('role',10)->default('guest');
             $table->string('status',20)->default('สมาชิกใหม่');
             $table->timestamp('email_verified_at')->nullable();
