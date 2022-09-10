@@ -262,8 +262,8 @@ class WebconfigController extends Controller
                     break;
                 }
                 if ($request->hasFile('photo_logo')) {
-                    if(Storage::exists('public/'.$webconfig->$bank_logo_old)){
-                        Storage::delete('public/'.$bank_logo_old);
+                    if(Storage::exists('public/'.$photo_old)){
+                        Storage::delete('public/'.$photo_old);
                     }
                     $photo_new = $request->file('photo_logo');
                     $photo_name = $photo.'-'.time().'.'.$photo_new->getClientOriginalExtension();
@@ -275,9 +275,10 @@ class WebconfigController extends Controller
 
             if ($requestData['mode'] == 'config') {
                 if ($request->hasFile('logo')) {
-                    if(Storage::exists('public/'.$webconfig->$logo_old)){
-                        Storage::delete('public/'.$logo_old);
+                    if(Storage::exists('public/'.$webconfig->logo)){
+                        Storage::delete('public/'.$webconfig->logo);
                     }
+                    
                     $logo_new = $request->file('logo');
                     $logo_name = 'logo-'.time().'.'.$logo_new->getClientOriginalExtension();
                     Image::make($logo_new)->save($path.'/'.$logo_name);
