@@ -12,7 +12,11 @@ function dateDifference($date_1 , $date_2 , $differenceFormat = '%a' )
     return $interval->format($differenceFormat);
 }
 
+
+
 function getCountDay($begin,$end){
+
+    
     $dArr1 = preg_split("/-/", $begin);
     list($year1, $month1, $day1) = $dArr1;
     $Day1 = mktime(0,0,0,$month1,$day1,$year1);
